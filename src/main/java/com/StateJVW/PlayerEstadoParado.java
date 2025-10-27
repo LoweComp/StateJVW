@@ -3,6 +3,7 @@ package com.StateJVW;
 public class PlayerEstadoParado implements EstadoPlayer{
     @Override
     public String apertarPlay(Player player) {
+        player.setEstado(new PlayerEstadoTocando());
         return "Comando PLAY. Iniciando reprodução.";
     }
     @Override
